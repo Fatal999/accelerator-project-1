@@ -1,5 +1,5 @@
 .hero {
-    background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
+    // background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
     display: flex;
     flex-direction: column;
 }
@@ -7,9 +7,84 @@
 .hero__header {
     width: 320px;
     margin: 0 auto;
+    min-height: 54px;
+    display: flex;
+    background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
 }
 
 .hero__header-logo {
     width: 100px;
     height: 20px;
+    margin: 16px 41px 16px 15px;
+}
+
+.hero_header-phone {
+    font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-decoration: none;
+    color: $white;
+    margin-top: 16px;
+}
+
+.hero__lower {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
+}
+
+.hero__lower-city {
+    font-family: "Alumni Sans", "Arial", "Helvetica", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px; 
+    margin: 48px 15px 14px auto;
+    color: $white;
+}
+
+.hero__lower-title {
+    font-family: "Alumni Sans", "Arial", "Helvetica", sans-serif;
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 62px; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 15px 48px auto;
+    color: $white;
+    text-align: right;
+}
+
+.hero__lower-description {
+    line-height: 20px;
+    text-align: right;
+    position: absolute;
+    top: 158px;
+    left: 15px;
+    color: $white;
+}
+
+.hero__lower-button {
+    font-family: "Roboto Condenced", "Arial", "Helvetica", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    text-transform: uppercase;
+    width: 290px;
+    height: 60px;
+    padding: 0;
+    margin: 48px 15px 32px auto;
+    outline: 2px solid $white;
+    background-color: transparent;
+    border: none;
+    color: $white;
+    cursor: pointer;
+}
+
+.hero__lower-image {
+    display: none;
 }

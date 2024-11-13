@@ -1,0 +1,39 @@
+.about {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.about__title {
+    font-family: "Alumni Sans", "Arial", "Helvetica", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 40px 12px 15px 15px;
+}
+
+.about__area {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 26px 36px 15px;
+}
+
+.about__description {
+    width: 290px;
+    margin: 0 15px 36px 15px;
+}
+
+.about__description--add {
+    display: none;
+}
+
+.about__image {
+    margin-bottom: 36px;
+}
+
+.about__video {
+    margin-bottom: 40px;
+}

@@ -19,71 +19,84 @@
         <svg class="hero__header-logo">
           <use href="/__spritemap#sprite-logo"></use>
         </svg>
-        <a href="tel:88005555555">88002223535</a>
+        <a class="hero_header-phone" href="tel:88005555555">8 800 555-55-55</a>
       </header>
-      <div>
-        <span>Омск</span>
-        <h1>Фитнес центр</h1>
-        <p>Тренажёрный зал<br>
+      <section class="hero__lower">
+        <span class="hero__lower-city">Омск</span>
+        <h1 class="hero__lower-title">
+          Фитнес<br> 
+          центр
+        </h1>
+        <p class="hero__lower-description">
+          Тренажёрный зал<br>
           Групповые занятия<br>
           Кардио-зона
         </p>
-        <button type="button">Купить абонемент</button>
-        <picture>
+        <button class="hero__lower-button" type="button">Купить абонемент</button>
+        <picture class="hero__lower-image">
           <source type="image/webp" srcset="./img/hero.webp, ./img/hero@2x.webp 2x">
           <img src="./img/hero.jpg" srcset="./img/hero@2x.jpg 2x" width="324" height="390" alt="Фитнес центр.">
         </picture>
-      </div>
+      </section>
     </div>
     <div data-test="about">
-      <h2>Тренажёрный зал</h2>
-      <span>Просторный зал площадью 900 кв/м</span>
-      <p>Supergym - самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
-        В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
-      </p>
-      <picture>
-        <source type="image/webp" srcset="./img/about.webp, ./img/about@2x.webp 2x">
-        <img src="./img/about.jpg" srcset="./img/about@2x.jpg 2x" width="320" height="280" alt="Фото фитнес центра.">
-      </picture>
-      <iframe width="320" height="170" src="https://youtu.be/9TZXsZItgdw?si=zfiVjNhOeecJPPwA" loading="lazy"></iframe>
+      <section class="about">
+        <h2 class="about__title">Тренажёрный зал</h2>
+        <span class="about__area">Просторный зал площадью 900 кв/м</span>
+        <p class="about__description">Supergym - самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+        <p class="about__description about__description--add">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        <picture class="about__image">
+          <source type="image/webp" srcset="./img/about.webp, ./img/about@2x.webp 2x">
+          <img src="./img/about.jpg" srcset="./img/about@2x.jpg 2x" width="320" height="280" alt="Фото фитнес центра.">
+        </picture>
+        <iframe class="about__video" width="320" height="170" src="https://youtu.be/9TZXsZItgdw?si=zfiVjNhOeecJPPwA" loading="lazy"></iframe>
+      </section>
     </div>
     <div data-test="price">
-      <h3>Абонементы</h3>
-      <div>
-        <button type="button">1 месяц</button>
-        <button type="button">6 месяцев</button>
-        <button type="button">12 месяцев</button>
-      </div>
-      <ul>
-        <li>
-          <h4>С тренером</h4>
-          <span>12 занятий</span>
-          <p>5000</p>
-          <span>5000</span>
-          <svg></svg>
-          <button type="button">Купить абонемент</button>
-        </li>
-        <li>
-          <h4>Дневной</h4>
-          <span>с 8:00 до 17:00</span>
-          <p>1700</p>
-          <span>1700</span>
-          <svg></svg>
-          <button type="button">Купить абонемент</button>
-        </li>
-        <li>
-          <h4>Полный день</h4>
-          <span>с 8:00 до 22:00</span>
-          <p>2700</p>
-          <span>2700</span>
-          <svg></svg>
-          <button type="button">Купить абонемент</button>
-        </li>
-      </ul>
-      <picture>
-        <source type="image/webp" srcset="./img/price-back.webp, ./img/price-back@2x.webp 2x">
-        <img src="./img/price-back.png" srcset="./img/price-back@2x.png 2x" width="275" height="328" alt="Блины для штанги.">
-      </picture>
+      <section class="price">
+        <h3 class="price__title">Абонементы</h3>
+        <div class="price__wrapper">
+          <button class="price__wrapper-button price__wrapper-button--active" type="button">1 месяц</button>
+          <button class="price__wrapper-button" type="button">6 месяцев</button>
+          <button class="price__wrapper-button" type="button">12 месяцев</button>
+        </div>
+        <ul class="price__list">
+          <li class="price__item">
+            <h4 class="price__item-title">С тренером</h4>
+            <p class="price__item-option">12 занятий</p>
+            <p class="price__item-background">5000</p>
+            <span class="price__item-price">5000</span>
+            <svg class="price__item-rub">
+              <use href="/__spritemap#sprite-rub"></use>
+            </svg>
+            <button class="price__item-button" type="button">Купить абонемент</button>
+          </li>
+          <li class="price__item">
+            <h4 class="price__item-title">Дневной</h4>
+            <p class="price__item-option">с 8:00 до 17:00</p>
+            <p class="price__item-background">1700</p>
+            <span class="price__item-price">1700</span>
+            <svg class="price__item-rub">
+              <use href="/__spritemap#sprite-rub"></use>
+            </svg>
+            <button class="price__item-button" type="button">Купить абонемент</button>
+          </li>
+          <li class="price__item">
+            <h4 class="price__item-title">Полный день</h4>
+            <p class="price__item-option">с 8:00 до 22:00</p>
+            <p class="price__item-background">2700</p>
+            <span class="price__item-price">2700</span>
+            <svg class="price__item-rub">
+              <use href="/__spritemap#sprite-rub"></use>
+            </svg>
+            <button class="price__item-button" type="button">Купить абонемент</button>
+          </li>
+        </ul>
+        <picture class="price__image">
+          <source type="image/webp" srcset="./img/price-back.webp, ./img/price-back@2x.webp 2x">
+          <img src="./img/price-back.png" srcset="./img/price-back@2x.png 2x" width="275" height="328" alt="Блины для штанги.">
+        </picture>
+      </section>
     </div>
     <div data-test="games">
       <div>
