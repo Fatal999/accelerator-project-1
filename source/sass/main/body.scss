@@ -1,0 +1,11 @@
+body {
+    font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 auto;
+    background-color: $white;
+    color: $purple;
+    display: flex;
+    flex-direction: column;
+}

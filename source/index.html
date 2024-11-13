@@ -14,9 +14,11 @@
   </head>
 
   <body class="page-body">
-    <div data-test="hero">
-      <header>
-        <svg></svg>
+    <div class="hero" data-test="hero">
+      <header class="hero__header">
+        <svg class="hero__header-logo">
+          <use href="/__spritemap#sprite-logo"></use>
+        </svg>
         <a href="tel:88005555555">88002223535</a>
       </header>
       <div>
@@ -27,7 +29,10 @@
           Кардио-зона
         </p>
         <button type="button">Купить абонемент</button>
-        <img>
+        <picture>
+          <source type="image/webp" srcset="./img/hero.webp, ./img/hero@2x.webp 2x">
+          <img src="./img/hero.jpg" srcset="./img/hero@2x.jpg 2x" width="324" height="390" alt="Фитнес центр.">
+        </picture>
       </div>
     </div>
     <div data-test="about">
@@ -36,8 +41,11 @@
       <p>Supergym - самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
         В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
       </p>
-      <img>
-      <video></video>
+      <picture>
+        <source type="image/webp" srcset="./img/about.webp, ./img/about@2x.webp 2x">
+        <img src="./img/about.jpg" srcset="./img/about@2x.jpg 2x" width="320" height="280" alt="Фото фитнес центра.">
+      </picture>
+      <iframe width="320" height="170" src="https://youtu.be/9TZXsZItgdw?si=zfiVjNhOeecJPPwA" loading="lazy"></iframe>
     </div>
     <div data-test="price">
       <h3>Абонементы</h3>
@@ -72,7 +80,10 @@
           <button type="button">Купить абонемент</button>
         </li>
       </ul>
-      <img>
+      <picture>
+        <source type="image/webp" srcset="./img/price-back.webp, ./img/price-back@2x.webp 2x">
+        <img src="./img/price-back.png" srcset="./img/price-back@2x.png 2x" width="275" height="328" alt="Блины для штанги.">
+      </picture>
     </div>
     <div data-test="games">
       <div>
@@ -92,43 +103,70 @@
         <span>Ежегодные соревнования по CrossFit</span>
         <button type="button">Заполнить заявку</button>
       </div>
-      <img>
+      <picture>
+        <source type="image/webp" srcset="./img/games.webp, ./img/games@2x.webp 2x">
+        <img src="./img/games.jpg" srcset="./img/games@2x.jpg 2x" width="290" height="290" alt="Соревнования по CrossFit.">
+      </picture>
     </div>
     <div data-test="juri">
       <h6>Жюри</h6>
-      <button type="button"></button>
-      <button type="button"></button>
+      <button type="button">left</button>
+      <button type="button">right</button>
       <ul>
         <li>
-          <img>
+          <picture>
+            <source type="image/webp" srcset="./img/card.webp, ./img/card@2x.webp 2x">
+            <img src="./img/card.jpg" srcset="./img/card@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+          </picture>
           <p>Анна Павлова</p>
         </li>
         <li>
-          <img>
+          <picture>
+            <source type="image/webp" srcset="./img/card2.webp, ./img/card2@2x.webp 2x">
+            <img src="./img/card2.jpg" srcset="./img/card2@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+          </picture>
           <p>Алексей Лавров</p>
         </li>
         <li>
-          <img>
+          <picture>
+            <source type="image/webp" srcset="./img/card3.webp, ./img/card3@2x.webp 2x">
+            <img src="./img/card3.jpg" srcset="./img/card3@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+          </picture>
           <p>Александр Пашков</p>
         </li>
         <li>
-          <img>
+          <picture>
+            <source type="image/webp" srcset="./img/card4.webp, ./img/card4@2x.webp 2x">
+            <img src="./img/card4.jpg" srcset="./img/card4@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+          </picture>
           <p>Мария Кетова</p>
         </li>
         <li>
-          <img>
+          <picture>
+            <source type="image/webp" srcset="./img/card.webp, ./img/card@2x.webp 2x">
+            <img src="./img/card.jpg" srcset="./img/card@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+          </picture>
           <p>Анна Павлова</p>
         </li>
         <li>
-          <img>
+          <picture>
+            <source type="image/webp" srcset="./img/card2.webp, ./img/card2@2x.webp 2x">
+            <img src="./img/card2.jpg" srcset="./img/card2@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+          </picture>
           <p>Алексей Лавров</p>
         </li>
         <li>
-          <img>
+          <picture>
+            <source type="image/webp" srcset="./img/card3.webp, ./img/card3@2x.webp 2x">
+            <img src="./img/card3.jpg" srcset="./img/card3@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+          </picture>
           <p>Александр Пашков</p>
         </li>
         <li>
-          <img>
+          <picture>
+            <source type="image/webp" srcset="./img/card4.webp, ./img/card4@2x.webp 2x">
+            <img src="./img/card4.jpg" srcset="./img/card4@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+          </picture>
           <p>Мария Кетова</p>
         </li>
       </ul>
@@ -175,7 +213,10 @@
           <span>4999</span>
           <p>Безлимитный абонемент в тренажёрный зал</p>
           <button type="button">Подробнее</button>
-          <img>
+          <picture>
+            <source type="image/webp" srcset="./img/sale.webp, ./img/sale@2x.webp 2x">
+            <img src="./img/sale.jpg" srcset="./img/sale@2x.jpg 2x" width="320" height="360" alt="Акция.">
+          </picture>
         </div>
         <div>
           <span>Месяц бесплатно</span>
@@ -201,88 +242,152 @@
         <li>
           <span>Как стать членом фитнес-центра?</span>
           <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-          <button type="button"></button>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
         <li>
           <span>Где можно посмотреть расписание?</span>
           <p>Вы можете ознакомиться с расписанием на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
-          <button type="button"></button>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
         <li>
           <span>Есть кулеры в центре? Предоставляются полотенца?</span>
-          <p></p>
-          <button type="button"></button>
+          <p>Кулеры расположены у входа в зал, а полотенца можно взять в аренду за отдельную стоимость.</p>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
         <li>
           <span>Сколько тренеров работает в клубе и какова их квалификация?</span>
-          <p></p>
-          <button type="button"></button>
+          <p>В нашем клубе работают более тридцати исключительно профессиональных тренеров высшей квалифиакции.</p>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
       </ul>
       <ul>
         <li>
           <span>Занятия с тренером входят в абонемент?</span>
           <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
-          <button type="button"></button>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
         <li>
           <span>Можно ли заморозить абонемент?</span>
-          <p></p>
-          <button type="button"></button>
+          <p>Абонемент можно заморозить на срок до 1 года.</p>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
         <li>
           <span>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</span>
-          <p></p>
-          <button type="button"></button>
+          <p>Лимита нет, вы можете посетить столько раз, сколько указано в вашем абонименте.</p>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
         <li>
           <span>Что такое семейный доступ и доступ для друзей?</span>
-          <p></p>
-          <button type="button"></button>
+          <p>По специальной цене мы можете приводить до трех своих друзей на занятия и до трех членов вашей семьи</p>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
       </ul>
       <ul>
         <li>
           <span>Предлагает ли клуб услуги по консультированию по вопросам питания?</span>
           <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
-          <button type="button"></button>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
         <li>
           <span>Проводятся ли в клубе какие-либо мероприятия или соревнования?</span>
-          <p></p>
-          <button type="button"></button>
+          <p>Сорвевнованяи проводятся в конце каждого месяца, посмотреть их можно на доске с информацией при входе.</p>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
         <li>
           <span>Можно ли приобрести в центре спортивное питание?</span>
-          <p></p>
-          <button type="button"></button>
+          <p>Возле стойки регистрации находится островок, где продается спортивное питание.</p>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
         <li>
           <span>Есть ли в центре детская комната?</span>
-          <p></p>
-          <button type="button"></button>
+          <p>Детская комната в нашем клубе не предусмотрена.</p>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
       </ul>
       <ul>
         <li>
           <span>Есть в фитнес-центре дресс-код?</span>
           <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
-          <button type="button"></button>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
         <li>
           <span>Можно ли приводить с собой детей на тренировки?</span>
-          <p></p>
-          <button type="button"></button>
+          <p>К сожалению, наш клуб могут посещать клиенты от 18 лет.</p>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
         <li>
           <span>Какие дополнительные правила посещения центра?</span>
-          <p></p>
-          <button type="button"></button>
+          <p>Со всеми правилами вы можете ознакомиться на доске с информацией при входе.</p>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
         <li>
           <span>Нужна ли медицинская справка для посещения залов и бассейна?</span>
-          <p></p>
-          <button type="button"></button>
+          <p>Перед посещением зала и бассейна вам нужна медицинская справка об отсутвии противопоказаний.</p>
+          <button type="button">
+            <svg>
+              <use href="/__spritemap#sprite-minus"></use>
+            </svg>
+          </button>
         </li>
       </ul>
     </div>
@@ -290,23 +395,32 @@
       <h11>Отзывы</h11>
       <ul>
         <li>
-          <img>
+          <picture>
+            <source type="image/webp" srcset="./img/review.webp, ./img/review@2x.webp 2x">
+            <img src="./img/review.jpg" srcset="./img/review@2x.jpg 2x" width="320" height="360" alt="Акция.">
+          </picture>
           <span>Анна Орлова</span>
-          <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей.»</p>
         </li>
         <li>
-          <img>
-          <span>Анна Орлова</span>
-          <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          <picture>
+            <source type="image/webp" srcset="./img/review.webp, ./img/review@2x.webp 2x">
+            <img src="./img/review.jpg" srcset="./img/review@2x.jpg 2x" width="320" height="360" alt="Акция.">
+          </picture>
+          <span>Тимофей Петров</span>
+          <p>«Очень нравится ходить в этот клуб с друзьями, очень рекомендую.»</p>
         </li>
         <li>
-          <img>
-          <span>Анна Орлова</span>
-          <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          <picture>
+            <source type="image/webp" srcset="./img/review.webp, ./img/review@2x.webp 2x">
+            <img src="./img/review.jpg" srcset="./img/review@2x.jpg 2x" width="320" height="360" alt="Акция.">
+          </picture>
+          <span>Майя Сидорова</span>
+          <p>«Все отлично, кроме женской раздевалки. Не хватает фенов и крема для рук, пока 4 из 5.»</p>
         </li>
       </ul>
-      <button type="button"></button>
-      <button type="button"></button>
+      <button type="button">left</button>
+      <button type="button">right</button>
     </div>
     <div data-test="form">
       <div>
@@ -338,7 +452,9 @@
       </div>
     </div>
     <div data-test="footer">
-      <svg></svg>
+      <svg>
+        <use href="/__spritemap#sprite-logo"></use>
+      </svg>
       <ul>
         <li>Услуги</li>
         <li>Абонементы</li>
@@ -348,9 +464,21 @@
       </ul>
       <ul>
         <li>
-          <a></a>
-          <a></a>
-          <a></a>
+          <a href="#">
+            <svg>
+              <use href="/__spritemap#sprite-vk"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="/__spritemap#sprite-ok"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use href="/__spritemap#sprite-reddit"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </div>
@@ -358,10 +486,3 @@
   </body>
 
 </html>
-
-    <!-- пример использования спрайта -->
-    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-    <!-- примеры требуемых атрибутов data-test="*" -->

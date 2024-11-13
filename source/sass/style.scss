@@ -1,4 +1,12 @@
 // Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
+
+//Main
+@import "../sass/main/variables.scss";
+@import "../sass/main/fonts.scss";
+@import "../sass/main/visually-hidden.scss";
+@import "../sass/main/page.scss";
+@import "../sass/main/body.scss";
+
+//Blocks
+@import "../sass/blocks/hero.scss";
