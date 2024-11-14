@@ -24,7 +24,7 @@
       <section class="hero__lower">
         <span class="hero__lower-city">Омск</span>
         <h1 class="hero__lower-title">
-          Фитнес<br> 
+          Фитнес<br>
           центр
         </h1>
         <p class="hero__lower-description">
@@ -49,23 +49,31 @@
           <source type="image/webp" srcset="./img/about.webp, ./img/about@2x.webp 2x">
           <img src="./img/about.jpg" srcset="./img/about@2x.jpg 2x" width="320" height="280" alt="Фото фитнес центра.">
         </picture>
-        <iframe class="about__video" width="320" height="170" src="https://youtu.be/9TZXsZItgdw?si=zfiVjNhOeecJPPwA" loading="lazy"></iframe>
+        <picture class="about__video">
+          <button class="about__video-play" type="button">
+            <svg class="about__video-play-icon">
+              <use href="/__spritemap#play-icon"></use>
+            </svg>
+          </button>
+          <img src="./img/video.jpg" width="320px" height="170px" alt="Видео о нашем клубе.">
+        </picture>
+        <iframe class="about__youtube" width="320" height="170" data-src="https://www.youtube.com/embed/9TZXsZItgdw?si=zfiVjNhOeecJPPwA" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
       </section>
     </div>
     <div data-test="price">
-      <section class="price">
+      <section class="price" id="price">
         <h3 class="price__title">Абонементы</h3>
         <div class="price__wrapper">
-          <button class="price__wrapper-button price__wrapper-button--active" type="button">1 месяц</button>
-          <button class="price__wrapper-button" type="button">6 месяцев</button>
-          <button class="price__wrapper-button" type="button">12 месяцев</button>
+          <button class="price__wrapper-button price__wrapper-button--month price__wrapper-button--active" type="button">1 месяц</button>
+          <button class="price__wrapper-button price__wrapper-button--half-a-year" type="button">6 месяцев</button>
+          <button class="price__wrapper-button price__wrapper-button--year" type="button">12 месяцев</button>
         </div>
         <ul class="price__list">
           <li class="price__item">
             <h4 class="price__item-title">С тренером</h4>
             <p class="price__item-option">12 занятий</p>
-            <p class="price__item-background">5000</p>
-            <span class="price__item-price">5000</span>
+            <p class="price__item-background price__item-background--trainer">5000</p>
+            <span class="price__item-price price__item-price--trainer">5000</span>
             <svg class="price__item-rub">
               <use href="/__spritemap#sprite-rub"></use>
             </svg>
@@ -74,8 +82,8 @@
           <li class="price__item">
             <h4 class="price__item-title">Дневной</h4>
             <p class="price__item-option">с 8:00 до 17:00</p>
-            <p class="price__item-background">1700</p>
-            <span class="price__item-price">1700</span>
+            <p class="price__item-background price__item-background--day">1700</p>
+            <span class="price__item-price price__item-price--day">1700</span>
             <svg class="price__item-rub">
               <use href="/__spritemap#sprite-rub"></use>
             </svg>
@@ -84,8 +92,8 @@
           <li class="price__item">
             <h4 class="price__item-title">Полный день</h4>
             <p class="price__item-option">с 8:00 до 22:00</p>
-            <p class="price__item-background">2700</p>
-            <span class="price__item-price">2700</span>
+            <p class="price__item-background price__item-background--full-day">2700</p>
+            <span class="price__item-price price__item-price--full-day">2700</span>
             <svg class="price__item-rub">
               <use href="/__spritemap#sprite-rub"></use>
             </svg>
@@ -98,28 +106,32 @@
         </picture>
       </section>
     </div>
-    <div data-test="games">
-      <div>
-        <h5>Super games</h5>
-        <div>
-          <p>Дата</p>
-          <div>
-            <p>7</p>
-            <p>Марта</p>
-            <p>2019</p>
+    <div class="games" data-test="games">
+      <section class="games__main">
+        <div class="games__wrapper">
+          <h5 class="games__wrapper-title">Super games</h5>
+          <div class="games_add">
+            <div class="games__container">
+              <p class="games__container-date">Дата</p>
+              <div class="games__wrapp">
+                <p class="games__wrapp-number">7</p>
+                <p class="games__wrapp-month">Марта</p>
+                <p class="games__wrapp-year">2019</p>
+              </div>
+            </div>
+            <div class="games__time">
+              <p class="games__time-time">Время</p>
+              <p class="games__time-hours">12:00</p>
+            </div>
           </div>
         </div>
-        <div>
-          <p>Время</p>
-          <p>12:00</p>
-        </div>
-        <span>Ежегодные соревнования по CrossFit</span>
-        <button type="button">Заполнить заявку</button>
-      </div>
-      <picture>
-        <source type="image/webp" srcset="./img/games.webp, ./img/games@2x.webp 2x">
-        <img src="./img/games.jpg" srcset="./img/games@2x.jpg 2x" width="290" height="290" alt="Соревнования по CrossFit.">
-      </picture>
+        <span class="games__description">Ежегодные соревнования по CrossFit</span>
+        <button class="games__button" type="button">Заполнить заявку</button>
+        <picture  class="games__image">
+          <source type="image/webp" srcset="./img/games.webp, ./img/games@2x.webp 2x">
+          <img src="./img/games.jpg" srcset="./img/games@2x.jpg 2x" width="290" height="290" alt="Соревнования по CrossFit.">
+        </picture>
+      </section>
     </div>
     <div data-test="juri">
       <h6>Жюри</h6>
