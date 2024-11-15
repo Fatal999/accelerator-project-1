@@ -1,0 +1,108 @@
+.features {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  background-color: #F8F9FC;
+}
+
+.features__title {
+  font-family: "Alumni Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  width: 320px;
+  text-align: center;
+  margin: 40px auto 0 auto;
+}
+
+.features__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.features__item {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__item--add {
+  min-height: 225px;
+  background-color: #1C3374;
+  margin-top: 30px;
+}
+
+.features__item:last-child .features__item-description {
+  margin-bottom: 30px;
+}
+
+.features__item-title {
+  font-size: 64px;
+  background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  line-height: 64px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.features__item-title--add {
+  background: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: initial;
+  color: $white;
+  margin-top: 30px;
+}
+
+.features__item-add {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  margin-bottom: 20.5px;
+}
+
+.features__item-add--add {
+  background: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: initial;
+  color: $white;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.features__item-feature {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.features__item-description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0;
+  width: 230px;
+  text-align: center;
+}
+
+.features__item-description--add {
+  color: $white;
+}

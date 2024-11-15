@@ -1,0 +1,32 @@
+.juri {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+.juri__title {
+  font-family: "Alumni Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  width: 290px;
+  margin: 40px auto 20px auto;
+  text-align: center;
+}
+
+.swiper {
+  width: 300px;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.swiper-button-prev {
+  display: none;
+}
+
+.swiper-button-next {
+  display: none;
+}
