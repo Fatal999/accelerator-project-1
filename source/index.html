@@ -229,29 +229,31 @@
       </section>
     </div>
     <div data-test="offers">
-      <h9>Акции</h9>
-      <div>
-        <div>
-          <p>Год</p>
-          <span>4999</span>
-          <p>Безлимитный абонемент в тренажёрный зал</p>
-          <button type="button">Подробнее</button>
-          <picture>
-            <source type="image/webp" srcset="./img/sale.webp, ./img/sale@2x.webp 2x">
-            <img src="./img/sale.jpg" srcset="./img/sale@2x.jpg 2x" width="320" height="360" alt="Акция.">
-          </picture>
+      <section class="offers">
+        <h9 class="offers__title">Акции</h9>
+        <div class="offers__wrapper">
+          <div class="offers__wrapper-price">
+            <p class="offers__wrapper-price-year">Год</p>
+            <span class="offers__wrapper-price-price">4999</span>
+            <p class="offers__wrapper-price-description">Безлимитный абонемент в тренажёрный зал</p>
+            <button class="offers__wrapper-price-button" type="button">Подробнее</button>
+            <picture class="offers__wrapper-price-image">
+              <source type="image/webp" srcset="./img/sale.webp, ./img/sale@2x.webp 2x">
+              <img src="./img/sale.jpg" srcset="./img/sale@2x.jpg 2x" width="320" height="360" alt="Акция.">
+            </picture>
+          </div>
+          <div class="offers__container offers__container--add">
+            <span class="offers__container-feature">Месяц бесплатно</span>
+            <p class="offers__container-description">Приведи друга, получи абонемент в подарок</p>
+            <button class="offers__container-button" type="button">Подробнее</button>
+          </div>
+          <div class="offers__container">
+            <span class="offers__container-feature">Скидка 20%</span>
+            <p class="offers__container-description">Корпоративный фитнес с командой</p>
+            <button class="offers__container-button" type="button">Подробнее</button>
+          </div>
         </div>
-        <div>
-          <span>Месяц бесплатно</span>
-          <p>Приведи друга, получи абонемент в подарок</p>
-          <button type="button">Подробнее</button>
-        </div>
-        <div>
-          <span>Скидка 20%</span>
-          <p>Корпоративный фитнес с командой</p>
-          <button type="button">Подробнее</button>
-        </div>
-      </div>
+      </section>
     </div>
     <div data-test="faq">
       <h10>Вопросы и ответы</h10>

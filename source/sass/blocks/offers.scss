@@ -1,0 +1,153 @@
+.offers {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+.offers__title {
+  font-family: "Alumni Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 40px auto 40px auto;
+}
+
+.offers__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.offers__wrapper-price {
+  background-color: #ED0233;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offers__wrapper-price-year {
+  font-size: 22px;
+  color: $white;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 30px auto 9px auto;
+}
+
+.offers__wrapper-price-price {
+  font-size: 64px;
+  color: $white;
+  font-weight: 700;
+  line-height: 64px;
+  margin: 0;
+}
+
+.offers__wrapper-price-description {
+  font-size: 16px;
+  color: $white;
+  font-weight: 300;
+  line-height: 20px;
+  width: 260px;
+  text-align: center;
+  margin: 28px auto 28px auto;
+}
+
+.offers__wrapper-price-button {
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  color: $white;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+  width: 73px;
+  min-height: 20px;
+  border: none;
+  margin: 0;
+  margin-bottom: 36px;
+  background-color: transparent;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 73px;
+    height: 1px;
+    background-color: $white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+}
+
+.offers__wrapper-price-image {
+  width: 320px;
+  height: 360px;
+}
+
+.offers__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 7px solid transparent;
+  border-image: linear-gradient(128deg, #D10A42 0%, #0041CA 100%) 1;
+  background: $white;
+  text-align: center;
+  width: 290px;
+  margin: 40px auto 40px auto;
+}
+
+.offers__container--add {
+  margin-bottom: -10px;
+}
+
+.offers__container-feature {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  width: 236px;
+  text-align: center;
+  margin: 20px auto 20px auto;
+  z-index: 2;
+}
+
+.offers__container-description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  width: 236px;
+  margin: 0;
+  margin-bottom: 20px;
+  z-index: 2;
+  text-align: center;
+}
+
+.offers__container-button {
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  color: $purple;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+  width: 73px;
+  min-height: 14px;
+  border: none;
+  margin: 0;
+  margin-bottom: 26px;
+  background-color: transparent;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 73px;
+    height: 1px;
+    background-color: $purple;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+}
