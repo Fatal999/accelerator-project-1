@@ -9,3 +9,4 @@ import './blocks/hero';
 import './blocks/price';
 import './blocks/video';
 import './blocks/juri';
+import './blocks/faq';

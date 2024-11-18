@@ -12,7 +12,9 @@ priceButtons.forEach((priceButton) => {
       priceButtons.forEach((membership) => {
         membership.classList.remove('price__wrapper-button--active');
       });
+
       priceButton.classList.add('price__wrapper-button--active');
+
       if (priceButton.classList.contains('price__wrapper-button--active')) {
         if (priceButton.classList.contains('price__wrapper-button--month')) {
           backgroundPriceTrainer.textContent = '5000';

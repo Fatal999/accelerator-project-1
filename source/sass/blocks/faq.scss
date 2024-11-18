@@ -1,0 +1,106 @@
+.faq {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #F8F9FC;
+}
+
+.faq__title {
+  font-family: "Alumni Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  width: 290px;
+  text-align: center;
+  margin: 70px auto 35px auto;
+}
+
+.faq__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 10px;
+  width: 290px;
+  padding: 0;
+  margin: 0 auto 35px auto;
+}
+
+.faq__item-button {
+  width: 140px;
+  min-height: 46px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid rgba(16, 38, 84, 0.20);
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  color: $purple;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.faq__item-button--active {
+  background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
+  color: $white;
+  border: none;
+}
+
+.faq__roster {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  width: 290px;
+}
+
+.faq__roster-item {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  border-bottom: 1px solid #74819C;
+  position: relative;
+}
+
+.faq__roster-item:first-child {
+  border-top: 1px solid #74819C;
+  border-bottom: 1px solid #74819C;
+}
+
+.faq__roster-question {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 238px;
+  margin: 20px 52px 20px 0;
+}
+
+.faq__roster-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  width: 238px;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.faq__roster-button {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #F8F9FC;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+}
+
+.faq__roster-button-icon {
+  width: 30px;
+  height: 30px;
+}
