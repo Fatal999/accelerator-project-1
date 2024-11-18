@@ -1,3 +1,5 @@
+<!-- Пофиксить заголовки + тест на бэм -->
+
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
@@ -19,14 +21,14 @@
         <svg class="hero__header-logo">
           <use href="/__spritemap#sprite-logo"></use>
         </svg>
-        <a class="hero_header-phone" href="tel:88005555555">8 800 555-55-55</a>
+        <a class="hero__header-phone" href="tel:88005555555">8 800 555-55-55</a>
       </header>
       <section class="hero__lower">
-        <span class="hero__lower-city">Омск</span>
-        <h1 class="hero__lower-title">
+        <h1 class="hero__lower-city">Омск</h1>
+        <h2 class="hero__lower-title">
           Фитнес<br>
           центр
-        </h1>
+        </h2>
         <p class="hero__lower-description">
           Тренажёрный зал<br>
           Групповые занятия<br>
@@ -41,8 +43,8 @@
     </div>
     <div data-test="about">
       <section class="about">
-        <h2 class="about__title">Тренажёрный зал</h2>
-        <span class="about__area">Просторный зал площадью 900 кв/м</span>
+        <h1 class="about__title">Тренажёрный зал</h1>
+        <h2 class="about__area">Просторный зал площадью 900 кв/м</h2>
         <p class="about__description">Supergym - самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
         <p class="about__description about__description--add">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
         <picture class="about__image">
@@ -62,7 +64,7 @@
     </div>
     <div data-test="price">
       <section class="price" id="price">
-        <h3 class="price__title">Абонементы</h3>
+        <h1 class="price__title">Абонементы</h1>
         <div class="price__wrapper">
           <button class="price__wrapper-button price__wrapper-button--month price__wrapper-button--active" type="button">1 месяц</button>
           <button class="price__wrapper-button price__wrapper-button--half-a-year" type="button">6 месяцев</button>
@@ -70,7 +72,7 @@
         </div>
         <ul class="price__list">
           <li class="price__item">
-            <h4 class="price__item-title">С тренером</h4>
+            <h2 class="price__item-title">С тренером</h2>
             <p class="price__item-option">12 занятий</p>
             <p class="price__item-background price__item-background--trainer">5000</p>
             <span class="price__item-price price__item-price--trainer">5000</span>
@@ -80,7 +82,7 @@
             <button class="price__item-button" type="button">Купить абонемент</button>
           </li>
           <li class="price__item">
-            <h4 class="price__item-title">Дневной</h4>
+            <h2 class="price__item-title">Дневной</h2>
             <p class="price__item-option">с 8:00 до 17:00</p>
             <p class="price__item-background price__item-background--day">1700</p>
             <span class="price__item-price price__item-price--day">1700</span>
@@ -90,7 +92,7 @@
             <button class="price__item-button" type="button">Купить абонемент</button>
           </li>
           <li class="price__item">
-            <h4 class="price__item-title">Полный день</h4>
+            <h2 class="price__item-title">Полный день</h2>
             <p class="price__item-option">с 8:00 до 22:00</p>
             <p class="price__item-background price__item-background--full-day">2700</p>
             <span class="price__item-price price__item-price--full-day">2700</span>
@@ -109,8 +111,8 @@
     <div class="games" data-test="games">
       <section class="games__main">
         <div class="games__wrapper">
-          <h5 class="games__wrapper-title">Super games</h5>
-          <div class="games_add">
+          <h1 class="games__wrapper-title">Super games</h1>
+          <div class="games__add">
             <div class="games__container">
               <p class="games__container-date">Дата</p>
               <div class="games__wrapp">
@@ -125,7 +127,7 @@
             </div>
           </div>
         </div>
-        <span class="games__description">Ежегодные соревнования по CrossFit</span>
+        <h2 class="games__description">Ежегодные соревнования по CrossFit</h2>
         <button class="games__button" type="button">Заполнить заявку</button>
         <picture  class="games__image">
           <source type="image/webp" srcset="./img/games.webp, ./img/games@2x.webp 2x">
@@ -135,7 +137,7 @@
     </div>
     <div data-test="juri">
       <section class="juri">
-        <h6 class="juri__title">Жюри</h6>
+        <h1 class="juri__title">Жюри</h1>
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -194,33 +196,33 @@
     </div>
     <div data-test="features">
       <section class="features">
-        <h7 class="features__title">Наши преимущества</h7>
+        <h1 class="features__title">Наши преимущества</h1>
         <ul class="features__list">
           <li class="features__item">
-            <h8 class="features__item-title">900</h8>
+            <h2 class="features__item-title">900</h2>
             <span class="features__item-add">кв/м</span>
             <span class="features__item-feature">Площадь</span>
             <p class="features__item-description">Занимайтесь без очередей и толкучки</p>
           </li>
           <li class="features__item">
-            <h8 class="features__item-title">70</h8>
+            <h2 class="features__item-title">70</h2>
             <span class="features__item-add">машин</span>
             <span class="features__item-feature">Собственная парковка</span>
             <p class="features__item-description">Вы всегда найдёте место для своей машины на нашей парковке</p>
           </li>
           <li class="features__item features__item--add">
-            <h8 class="features__item-title features__item-title--add">100</h8>
+            <h2 class="features__item-title features__item-title--add">100</h2>
             <span class="features__item-add features__item-add--add">тренажеров</span>
             <p class="features__item-description features__item-description--add">Современные тренажёры на все группы мышц</p>
           </li>
           <li class="features__item">
-            <h8 class="features__item-title">350</h8>
+            <h2 class="features__item-title">350</h2>
             <span class="features__item-add">мест</span>
             <span class="features__item-feature">Комфорт</span>
             <p class="features__item-description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
           </li>
           <li class="features__item">
-            <h8 class="features__item-title">5+</h8>
+            <h2 class="features__item-title">5+</h2>
             <span class="features__item-add">лет</span>
             <span class="features__item-feature">Тренерский опыт</span>
             <p class="features__item-description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
@@ -230,7 +232,7 @@
     </div>
     <div data-test="offers">
       <section class="offers">
-        <h9 class="offers__title">Акции</h9>
+        <h1 class="offers__title">Акции</h1>
         <div class="offers__wrapper">
           <div class="offers__wrapper-price">
             <p class="offers__wrapper-price-year">Год</p>
@@ -257,7 +259,7 @@
     </div>
     <div data-test="faq">
       <section class="faq">
-        <h10 class="faq__title">Вопросы и ответы</h10>
+        <h1 class="faq__title">Вопросы и ответы</h1>
         <ul class="faq__list">
           <li class="faq__item">
             <button class="faq__item-button faq__item-button--center faq__item-button--active" type="button">Центр</button>
@@ -428,7 +430,7 @@
     </div>
     <div data-test="reviews">
       <section class="reviews">
-        <h11 class="revie__title">Отзывы</h11>
+        <h1 class="reviews-title">Отзывы</h1>
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -461,64 +463,82 @@
       </section>
     </div>
     <div data-test="form">
-      <div>
-        <h12>Бесплатное занятие</h12>
-        <form method="post" action="https://echo.htmlacademy.ru/">
-          <input type="text">
-          <input type="tel">
-          <button type="submit">Отправить</button>
+      <section class="form">
+        <form method="post" action="https://echo.htmlacademy.ru/"></form>
+          <div class="form__fields">
+            <h1 class="form__fields-title">Бесплатное занятие</h1>
+            <input class="form__fields-name" type="text" placeholder="Имя" required>
+            <input class="form__fields-tel" type="tel" placeholder="Телефон" required>
+            <button class="form__fields-submit" type="submit">Отправить</button>
+          </div>
         </form>
-      </div>
-      <div>
-        <h13>Контакты</h13>
-        <div>
-          <span>Адрес:</span>
-          <p>г. Омск, ул. 60 лет Октября, 7</p>
+        <div class="form__contacts">
+          <h2 class="form__contacts-title">Контакты</h2>
+          <div class="form__adress">
+            <span class="form__adress-title">Адрес:</span>
+            <p class="form__adress-adress">г. Омск, ул. 60 лет Октября, 7</p>
+          </div>
+          <div class="form__schedule">
+            <span class="form__schedule-title">График работы:</span>
+            <p class="form__schedule-time">Пн-Вс: с 8:00 до 22:00</p>
+          </div>
+          <div class="form__tel">
+            <span class="form__tel-title">Телефон:</span>
+            <a class="form__tel-tel" href="tel:88005555555">8 800 555-55-55</a>
+          </div>
+          <div class="form__email">
+            <span class="form__email-title">Email:</span>
+            <a class="form__email-email" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+          </div>
         </div>
-        <div>
-          <span>График работы:</span>
-          <p>Пн-Вс: с 8:00 до 22:00</p>
-        </div>
-        <div>
-          <span>Телефон:</span>
-          <a href="tel:88005555555">8 800 555-55-55</a>
-        </div>
-        <div>
-          <span>Email:</span>
-          <a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
-        </div>
-      </div>
+      </section>
     </div>
     <div data-test="footer">
-      <svg>
-        <use href="/__spritemap#sprite-logo"></use>
-      </svg>
-      <ul>
-        <li>Услуги</li>
-        <li>Абонементы</li>
-        <li>Акции</li>
-        <li>Тренеры</li>
-        <li>Расписание</li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#">
-            <svg>
-              <use href="/__spritemap#sprite-vk"></use>
-            </svg>
-          </a>
-          <a href="#">
-            <svg>
-              <use href="/__spritemap#sprite-ok"></use>
-            </svg>
-          </a>
-          <a href="#">
-            <svg>
-              <use href="/__spritemap#sprite-reddit"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      <footer class="footer">
+        <svg class="footer__logo">
+          <use href="/__spritemap#sprite-logo"></use>
+        </svg>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <button class="footer__item-button" type="button">Услуги</button>
+          </li>
+          <li class="footer__item">
+            <button class="footer__item-button" type="button">Абонементы</button>
+          </li>
+          <li class="footer__item">
+            <button class="footer__item-button" type="button">Акции</button>
+          </li>
+          <li class="footer__item">
+            <button class="footer__item-button" type="button">Тренеры</button>
+          </li>
+          <li class="footer__item">
+            <button class="footer__item-button" type="button">Расписание</button>
+          </li>
+        </ul>
+        <ul class="footer__links">
+          <li class="footer__link">
+            <a class="footer__target" href="https://vk.com/">
+              <svg class="footer__target-icon">
+                <use href="/__spritemap#sprite-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__link">
+            <a class="footer__target" href="https://ok.ru/">
+              <svg class="footer__target-icon">
+                <use href="/__spritemap#sprite-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__link">
+            <a class="footer__target" href="https://www.reddit.com/">
+              <svg class="footer__target-icon">
+                <use href="/__spritemap#sprite-reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
     <script type="module" src="js/main.js"></script>
   </body>

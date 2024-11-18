@@ -74,7 +74,6 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
-  margin: 238px;
   margin: 20px 52px 20px 0;
 }
 
@@ -84,7 +83,10 @@
   line-height: 20px;
   width: 238px;
   margin: 0;
-  margin-bottom: 21px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
 .faq__roster-button {

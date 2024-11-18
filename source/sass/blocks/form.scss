@@ -1,0 +1,178 @@
+.form {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.form__fields {
+  background-color: $purple;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__fields-title{
+  font-family: "Alumni Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 32px;
+  color: $white;
+  font-weight: 600;
+  line-height: 32px;
+  width: 290px;
+  margin: 70px auto 15px auto;
+}
+
+.form__fields-name {
+  width: 290px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819C;
+  cursor: pointer;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300;
+  line-height: 22px;
+  margin-left: 15px;
+  margin-bottom: 36px;
+  padding: 0;
+}
+
+.form__fields-tel {
+  width: 290px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819C;
+  cursor: pointer;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300;
+  line-height: 22px;
+  margin-left: 15px;
+  margin-bottom: 36px;
+  padding: 0;
+}
+
+.form__fields-submit {
+  font-family: "Roboto Condensed" "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  color: $white;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  width: 290px;
+  min-height: 60px;
+  border: 2px solid $white;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 auto 70px auto;
+  background-color: transparent;
+}
+
+.form__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__contacts-title {
+  font-family: "Alumni Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  width: 290px;
+  margin: 40px auto 15px auto;
+}
+
+.form__adress {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.form__adress-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.form__adress-adress {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 28px;
+}
+
+.form__schedule {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.form__schedule-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.form__schedule-time {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 28px;
+}
+
+.form__tel {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.form__tel-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.form__tel-tel {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 28px;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  color: $purple;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form__email {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.form__email-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.form__email-email {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 40px;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  color: $purple;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}

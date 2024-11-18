@@ -45,10 +45,14 @@ const faqDescriptions = document.querySelectorAll('.faq__roster-description');
 const faqIconButtons = document.querySelectorAll('.faq__roster-button');
 
 faqDescriptions.forEach((description) => {
-  description.style.display = 'none';
-
   if (description.classList.contains('faq__roster-description--active')) {
-    description.style.display = 'block';
+    description.style.maxHeight = `${description.scrollHeight}px`;
+    description.style.opacity = '1';
+    description.style.marginBottom = '20px';
+  } else {
+    description.style.maxHeight = '0';
+    description.style.opacity = '0';
+    description.style.marginBottom = '0';
   }
 });
 
@@ -57,12 +61,16 @@ faqIconButtons.forEach((button) => {
     const useElement = button.querySelector('use');
     const description = button.closest('li').querySelector('.faq__roster-description');
 
-    if (description.style.display === 'none') {
-      description.style.display = 'block';
+    if (description.style.maxHeight === '0px') {
+      description.style.maxHeight = `${description.scrollHeight}px`;
+      description.style.opacity = '1';
       useElement.setAttribute('href', '/__spritemap#sprite-minus');
+      description.style.marginBottom = '20px';
     } else {
-      description.style.display = 'none';
+      description.style.maxHeight = '0';
+      description.style.opacity = '0';
       useElement.setAttribute('href', '/__spritemap#sprite-plus');
+      description.style.marginBottom = '0px';
     }
   });
 });
