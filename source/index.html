@@ -1,5 +1,3 @@
-<!-- Пофиксить заголовки + тест на бэм -->
-
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
@@ -21,7 +19,7 @@
         <svg class="hero__header-logo">
           <use href="/__spritemap#sprite-logo"></use>
         </svg>
-        <a class="hero__header-phone" href="tel:88005555555">8 800 555-55-55</a>
+        <a class="hero__header-phone" href="tel:88005555555" aria-disabled="true">8 800 555-55-55</a>
       </header>
       <section class="hero__lower">
         <h1 class="hero__lower-city">Омск</h1>
@@ -35,29 +33,48 @@
           Кардио-зона
         </p>
         <button class="hero__lower-button" type="button">Купить абонемент</button>
-        <picture class="hero__lower-image">
-          <source type="image/webp" srcset="./img/hero.webp, ./img/hero@2x.webp 2x">
-          <img src="./img/hero.jpg" srcset="./img/hero@2x.jpg 2x" width="324" height="390" alt="Фитнес центр.">
+        <picture>
+          <source type="image/webp" media="(min-width: 1366px)"
+            srcset="./img/hero-desktop.webp, ./img/hero-desktop@2x.webp 2x">
+          <source type="image/webp"
+            srcset="./img/hero-tablet.webp, ./img/hero-tablet@2x.webp 2x">
+          <source media="(min-width: 1366px)"
+            srcset="./img/hero-desktop.jpg, /img/hero-desktop@2x.jpg 2x">
+          <img class="hero__lower-image" src="./img/hero-tablet.jpg"
+            srcset="./img/hero-tablet@2x.jpg 2x" width="324" height="390" alt="Наш клиент.">
         </picture>
       </section>
     </div>
     <div data-test="about">
       <section class="about">
         <h1 class="about__title">Тренажёрный зал</h1>
-        <h2 class="about__area">Просторный зал площадью 900 кв/м</h2>
-        <p class="about__description">Supergym - самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+        <h2 class="about__sub-title">Просторный зал площадью 900 кв/м</h2>
+        <span>Supergym - самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</span>
         <p class="about__description about__description--add">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
-        <picture class="about__image">
-          <source type="image/webp" srcset="./img/about.webp, ./img/about@2x.webp 2x">
-          <img src="./img/about.jpg" srcset="./img/about@2x.jpg 2x" width="320" height="280" alt="Фото фитнес центра.">
+        <picture>
+          <source type="image/webp" media="(min-width: 1366px )"
+            srcset="./img/about-desktop.webp, ./img/about-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px )"
+            srcset="./img/about-tablet.webp, ./img/about-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="./img/about-mobile.webp, ../img/about-mobile@2x.webp 2x">
+          <source media="(min-width: 1366px )"
+            srcset="./img/about-desktop.jpg, ./img/about-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px )"
+            srcset="./img/about-tablet.jpg, ./img/about-tablet@2x.jpg 2x">
+          <img class="about__image" src="./img/about.jpg"
+            srcset="./img/about@2x.jpg 2x" width="320" height="280" alt="Фото фитнес центра.">
         </picture>
-        <picture class="about__video">
+        <picture>
+          <source type="image/webp"
+            srcset="./img/video.webp, ./img/video@2x.webp 2x">
+          <img class="about__video" src="./img/video.jpg"
+            srcset="./img/video@2x.jpg 2x" width="320" height="170" alt="Превью видео.">
           <button class="about__video-play" type="button">
-            <svg class="about__video-play-icon">
+            <!-- <svg class="about__video-play-icon">
               <use href="/__spritemap#play-icon"></use>
-            </svg>
+            </svg> -->
           </button>
-          <img src="./img/video.jpg" width="320px" height="170px" alt="Видео о нашем клубе.">
         </picture>
         <iframe class="about__youtube" width="320" height="170" data-src="https://www.youtube.com/embed/9TZXsZItgdw?si=zfiVjNhOeecJPPwA" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
       </section>
@@ -73,8 +90,8 @@
         <ul class="price__list">
           <li class="price__item">
             <h2 class="price__item-title">С тренером</h2>
-            <p class="price__item-option">12 занятий</p>
-            <p class="price__item-background price__item-background--trainer">5000</p>
+            <h3 class="price__item-option">12 занятий</h3>
+            <p class="price__item-background price__item-background--trainer" aria-hidden="true">5000</p>
             <span class="price__item-price price__item-price--trainer">5000</span>
             <svg class="price__item-rub">
               <use href="/__spritemap#sprite-rub"></use>
@@ -83,8 +100,8 @@
           </li>
           <li class="price__item">
             <h2 class="price__item-title">Дневной</h2>
-            <p class="price__item-option">с 8:00 до 17:00</p>
-            <p class="price__item-background price__item-background--day">1700</p>
+            <h3 class="price__item-option">с 8:00 до 17:00</h3>
+            <p class="price__item-background price__item-background--day" aria-hidden="true">1700</p>
             <span class="price__item-price price__item-price--day">1700</span>
             <svg class="price__item-rub">
               <use href="/__spritemap#sprite-rub"></use>
@@ -93,8 +110,8 @@
           </li>
           <li class="price__item">
             <h2 class="price__item-title">Полный день</h2>
-            <p class="price__item-option">с 8:00 до 22:00</p>
-            <p class="price__item-background price__item-background--full-day">2700</p>
+            <h3 class="price__item-option">с 8:00 до 22:00</h3>
+            <p class="price__item-background price__item-background--full-day" aria-hidden="true">2700</p>
             <span class="price__item-price price__item-price--full-day">2700</span>
             <svg class="price__item-rub">
               <use href="/__spritemap#sprite-rub"></use>
@@ -102,9 +119,9 @@
             <button class="price__item-button" type="button">Купить абонемент</button>
           </li>
         </ul>
-        <picture class="price__image">
+        <picture>
           <source type="image/webp" srcset="./img/price-back.webp, ./img/price-back@2x.webp 2x">
-          <img src="./img/price-back.png" srcset="./img/price-back@2x.png 2x" width="275" height="328" alt="Блины для штанги.">
+          <img class="price__image" src="./img/price-back.png" srcset="./img/price-back@2x.png 2x" width="275" height="328" alt="Блины для штанги.">
         </picture>
       </section>
     </div>
@@ -129,9 +146,19 @@
         </div>
         <h2 class="games__description">Ежегодные соревнования по CrossFit</h2>
         <button class="games__button" type="button">Заполнить заявку</button>
-        <picture  class="games__image">
-          <source type="image/webp" srcset="./img/games.webp, ./img/games@2x.webp 2x">
-          <img src="./img/games.jpg" srcset="./img/games@2x.jpg 2x" width="290" height="290" alt="Соревнования по CrossFit.">
+        <picture>
+          <source type="image/webp" media="(min-width: 1366px )"
+            srcset="./img/games-desktop.webp, ./img/games-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px )"
+            srcset="./img/games-tablet.webp, ./img/games-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="./img/games-mobile.webp, ./img/games-mobile@2x.webp 2x">
+          <source media="(min-width: 1366px )"
+            srcset="./img/games-desktop.jpg, ./img/games-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px )"
+            srcset="./img/games-tablet.jpg, ./img/games-tablet@2x.jpg 2x">
+          <img class="games__image" src="./img/games-mobile.jpg"
+            srcset="./img/games-mobile@2x.jpg 2x" width="290" height="290" alt="Соревнования по CrossFit.">
         </picture>
       </section>
     </div>
@@ -141,51 +168,66 @@
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <picture class="item-image">
-                <source type="image/webp" srcset="./img/card.webp, ./img/card@2x.webp 2x">
-                <img src="./img/card.jpg" srcset="./img/card@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+              <picture>
+                <source type="image/webp"
+                  srcset="./img/juri-one.webp, ./img/juri-one@2x.webp 2x">
+                <img class="item-image" src="./img/juri-one.jpg"
+                  srcset="./img/juri-one@2x.jpg 2x" width="260" height="300" alt="Член жюри.">
               </picture>
             </div>
             <div class="swiper-slide">
-              <picture class="item-image">
-                <source type="image/webp" srcset="./img/card2.webp, ./img/card2@2x.webp 2x">
-                <img src="./img/card2.jpg" srcset="./img/card2@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+              <picture>
+                <source type="image/webp"
+                  srcset="./img/juri-two.webp, ./img/juri-two@2x.webp 2x">
+                <img class="item-image" src="./img/juri-two.jpg"
+                  srcset="./img/juri-two@2x.jpg 2x" width="260" height="300" alt="Член жюри.">
               </picture>
             </div>
             <div class="swiper-slide">
-              <picture class="item-image">
-                <source type="image/webp" srcset="./img/card3.webp, ./img/card3@2x.webp 2x">
-                <img src="./img/card3.jpg" srcset="./img/card3@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+              <picture>
+                <source type="image/webp"
+                  srcset="./img/juri-three.webp, ./img/juri-three@2x.webp 2x">
+                <img class="item-image" src="./img/juri-three.jpg"
+                  srcset="./img/juri-three@2x.jpg 2x" width="260" height="300" alt="Член жюри.">
               </picture>
             </div>
             <div class="swiper-slide">
-              <picture class="item-image">
-                <source type="image/webp" srcset="./img/card4.webp, ./img/card4@2x.webp 2x">
-                <img src="./img/card4.jpg" srcset="./img/card4@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+              <picture>
+                <source type="image/webp"
+                  srcset="./img/juri-four.webp, ./img/juri-four@2x.webp 2x">
+                <img class="item-image" src="./img/juri-four.jpg"
+                  srcset="./img/juri-four@2x.jpg 2x" width="260" height="300" alt="Член жюри.">
               </picture>
             </div>
             <div class="swiper-slide">
-              <picture class="item-image">
-                <source type="image/webp" srcset="./img/card.webp, ./img/card@2x.webp 2x">
-                <img src="./img/card.jpg" srcset="./img/card@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+              <source type="image/webp"
+              srcset="./img/juri-one.webp, ./img/juri-one@2x.webp 2x">
+            <img class="item-image" src="./img/juri-one.jpg"
+              srcset="./img/juri-one@2x.jpg 2x" width="260" height="300" alt="Член жюри.">
+          </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source type="image/webp"
+                  srcset="./img/juri-two.webp, ./img/juri-two@2x.webp 2x">
+                <img class="item-image" src="./img/juri-two.jpg"
+                  srcset="./img/juri-two@2x.jpg 2x" width="260" height="300" alt="Член жюри.">
               </picture>
             </div>
             <div class="swiper-slide">
-              <picture class="item-image">
-                <source type="image/webp" srcset="./img/card2.webp, ./img/card2@2x.webp 2x">
-                <img src="./img/card2.jpg" srcset="./img/card2@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+              <picture>
+                <source type="image/webp"
+                  srcset="./img/juri-three.webp, ./img/juri-three@2x.webp 2x">
+                <img class="item-image" src="./img/juri-three.jpg"
+                  srcset="./img/juri-three@2x.jpg 2x" width="260" height="300" alt="Член жюри.">
               </picture>
             </div>
             <div class="swiper-slide">
-              <picture class="item-image">
-                <source type="image/webp" srcset="./img/card3.webp, ./img/card3@2x.webp 2x">
-                <img src="./img/card3.jpg" srcset="./img/card3@2x.jpg 2x" width="260" height="300" alt="Жюри.">
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture class="item-image">
-                <source type="image/webp" srcset="./img/card4.webp, ./img/card4@2x.webp 2x">
-                <img src="./img/card4.jpg" srcset="./img/card4@2x.jpg 2x" width="260" height="300" alt="Жюри.">
+              <picture>
+                <source type="image/webp"
+                  srcset="./img/juri-four.webp, ./img/juri-four@2x.webp 2x">
+                <img class="item-image" src="./img/juri-four.jpg"
+                  srcset="./img/juri-four@2x.jpg 2x" width="260" height="300" alt="Член жюри.">
               </picture>
             </div>
           </div>
@@ -239,9 +281,19 @@
             <span class="offers__wrapper-price-price">4999</span>
             <p class="offers__wrapper-price-description">Безлимитный абонемент в тренажёрный зал</p>
             <button class="offers__wrapper-price-button" type="button">Подробнее</button>
-            <picture class="offers__wrapper-price-image">
-              <source type="image/webp" srcset="./img/sale.webp, ./img/sale@2x.webp 2x">
-              <img src="./img/sale.jpg" srcset="./img/sale@2x.jpg 2x" width="320" height="360" alt="Отзыв.">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px )"
+                srcset="./img/offers-desktop.webp, ./img/offers-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px )"
+                srcset="./img/offers-tablet.webp, ./img/offers-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/offers-mobile.webp, ./img/offers-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px )"
+                srcset="./img/offers-desktop.jpg, ./img/offers-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px )"
+                srcset="./img/offers-tablet.jpg, ./img/offers-tablet@2x.jpg 2x">
+              <img class="offers__wrapper-price-image" src="./img/offers-mobile.jpg"
+                srcset="./img/offers-mobile@2x.jpg 2x" width="320" height="360" alt="Акция.">
             </picture>
           </div>
           <div class="offers__container offers__container--add">
@@ -435,24 +487,30 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <picture>
-                <source type="image/webp" srcset="./img/review.webp, ./img/review@2x.webp 2x">
-                <img class="swiper-slide__image" src="./img/review.jpg" srcset="./img/review@2x.jpg 2x" width="68" height="68" alt="Отзыв.">
+                <source type="image/webp"
+                  srcset="./img/reviews.webp, ./img/reviews@2x.webp 2x">
+                <img class="swiper-slide__image" src="./img/reviews.jpg"
+                  srcset="./img/reviews@2x.jpg 2x" width="68" height="68" alt="Отзыв.">
               </picture>
               <span class="swiper-slide__name">Анна Орлова</span>
               <p class="swiper-slide__review">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей.»</p>
             </div>
             <div class="swiper-slide">
               <picture>
-                <source type="image/webp" srcset="./img/review.webp, ./img/review@2x.webp 2x">
-                <img class="swiper-slide__image" src="./img/review.jpg" srcset="./img/review@2x.jpg 2x" width="68" height="68" alt="Отзыв.">
+                <source type="image/webp"
+                  srcset="./img/reviews.webp, ./img/reviews@2x.webp 2x">
+                <img class="swiper-slide__image" src="./img/reviews.jpg"
+                  srcset="./img/reviews@2x.jpg 2x" width="68" height="68" alt="Отзыв.">
               </picture>
               <span class="swiper-slide__name">Тимофей Петров</span>
               <p class="swiper-slide__review">«Очень нравится ходить в этот клуб с друзьями, очень рекомендую.»</p>
             </div>
             <div class="swiper-slide">
               <picture>
-                <source type="image/webp" srcset="./img/review.webp, ./img/review@2x.webp 2x">
-                <img class="swiper-slide__image" src="./img/review.jpg" srcset="./img/review@2x.jpg 2x" width="68" height="68" alt="Отзыв.">
+                <source type="image/webp"
+                  srcset="./img/reviews.webp, ./img/reviews@2x.webp 2x">
+                <img class="swiper-slide__image" src="./img/reviews.jpg"
+                  srcset="./img/reviews@2x.jpg 2x" width="68" height="68" alt="Отзыв.">
               </picture>
               <span class="swiper-slide__name">Майя Сидорова</span>
               <p class="swiper-slide__review">«Все отлично, кроме женской раздевалки. Не хватает фенов и крема для рук, пока 4 из 5.»</p>
