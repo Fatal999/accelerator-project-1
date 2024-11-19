@@ -38,6 +38,54 @@
   background-color: #F8F9FC;
   cursor: pointer;
   position: relative;
+
+  &:hover {
+    color: rgba(16, 38, 84, 0.70);
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #787878;
+    }
+  }
+
+  &:focus {
+    color: $purple;
+    outline: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $purple;
+    }
+  }
+
+  &:active {
+    color: $purple;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #ED0233;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }
 
 .price__wrapper-button--active {
@@ -65,11 +113,22 @@
 }
 
 .price__item {
-  width: 290px;
+  width: 276px;
   min-height: 384px;
   background-color: $white;
   margin-bottom: 35px;
   position: relative;
+  border: 7px solid transparent;
+
+  &:hover {
+    border-image: linear-gradient(128deg, #D10A42 0%, #0041CA 100%) 1;
+  }
+
+  &:hover .price__item-button {
+    background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+    color: $white;
+    outline: none;
+  }
 }
 
 .price__item:last-child {
@@ -148,6 +207,27 @@
   margin: 18px 42px 50px 42px;
   padding: 0;
   cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+    color: $white;
+    outline: none;
+  }
+
+  &:focus {
+    background: linear-gradient(97deg, rgba(237, 2, 51, 0.80) 17.6%, rgba(0, 62, 183, 0.80) 95.31%);
+  }
+
+  &:active {
+    background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+    color: rgba(255, 255, 255, 0.7);
+    color: red;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }
 
 .price__image {

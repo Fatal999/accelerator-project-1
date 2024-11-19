@@ -36,16 +36,23 @@
 
 .about__image {
   margin-bottom: 36px;
+}
 
-  // @media (min-width: $desktop-width) {
-  //   width: 660px;
-  //   height: 400px;
-  // }
+.about__wrapper {
+  display: flex;
+  position: relative;
 }
 
 .about__video {
+  width: 320px;
+  height: 170px;
   margin-bottom: 40px;
-  position: relative;
+}
+
+.about__youtube {
+  margin-bottom: 40px;
+  width: 320px;
+  height: 170px;
 }
 
 .about__video-play {
@@ -55,17 +62,16 @@
   width: 72px;
   height: 72px;
   background-color: transparent;
-  border: none;
   cursor: pointer;
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
+  margin: 0;
+  border: none;
 }
 
-// .about__video-play-icon {
-//   width: 72px;
-//   height: 72px;
-// }
-
-.about__youtube {
-  margin-bottom: 40px;
+.about__video-play-icon {
+  width: 72px;
+  height: 72px;
 }
