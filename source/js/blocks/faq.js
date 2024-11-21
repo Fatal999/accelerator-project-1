@@ -41,36 +41,40 @@ faqButtons.forEach((button) => {
   });
 });
 
-const faqDescriptions = document.querySelectorAll('.faq__roster-description');
+const faqDescriptions = document.querySelectorAll('.faq__roster-item p');
 const faqIconButtons = document.querySelectorAll('.faq__roster-button');
 
 faqDescriptions.forEach((description) => {
-  if (description.classList.contains('faq__roster-description--active')) {
+  const button = description.closest('li').querySelector('.faq__roster-button');
+
+  if (description.getAttribute('data-active') === 'true') {
     description.style.maxHeight = `${description.scrollHeight}px`;
     description.style.opacity = '1';
     description.style.marginBottom = '20px';
+    button.setAttribute('data-state', 'minus');
   } else {
     description.style.maxHeight = '0';
     description.style.opacity = '0';
     description.style.marginBottom = '0';
+    button.setAttribute('data-state', 'plus');
   }
 });
 
 faqIconButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    const useElement = button.querySelector('use');
-    const description = button.closest('li').querySelector('.faq__roster-description');
+    const description = button.closest('li').querySelector('.faq__roster-item p');
 
     if (description.style.maxHeight === '0px') {
       description.style.maxHeight = `${description.scrollHeight}px`;
       description.style.opacity = '1';
-      useElement.setAttribute('href', '/__spritemap#sprite-minus');
+      button.setAttribute('data-state', 'minus');
       description.style.marginBottom = '20px';
     } else {
       description.style.maxHeight = '0';
       description.style.opacity = '0';
-      useElement.setAttribute('href', '/__spritemap#sprite-plus');
+      button.setAttribute('data-state', 'plus');
       description.style.marginBottom = '0px';
     }
   });
 });
+

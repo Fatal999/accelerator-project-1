@@ -26,7 +26,7 @@
   align-items: center;
 }
 
-.offers__wrapper-price-year {
+.offers__wrapper-price > h2 {
   font-size: 22px;
   color: $white;
   font-weight: 700;
@@ -34,7 +34,7 @@
   margin: 30px auto 9px auto;
 }
 
-.offers__wrapper-price-price {
+.offers__wrapper-price > span {
   font-size: 64px;
   color: $white;
   font-weight: 700;
@@ -42,7 +42,7 @@
   margin: 0;
 }
 
-.offers__wrapper-price-description {
+.offers__wrapper-price > p {
   font-size: 16px;
   color: $white;
   font-weight: 300;
@@ -59,8 +59,8 @@
   font-weight: 700;
   line-height: 14px;
   text-transform: uppercase;
-  width: 73px;
-  min-height: 20px;
+  width: 93px;
+  min-height: 34px;
   border: none;
   margin: 0;
   margin-bottom: 36px;
@@ -70,14 +70,46 @@
   cursor: pointer;
   position: relative;
 
+  &:hover {
+    opacity: 0.8;
+
+    &::before {
+      opacity: 0.8;
+    }
+  }
+
+  &:focus {
+    outline: 1px solid $white;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &:active {
+    color: $white;
+
+    &::before {
+      background-color: $white;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
   &::before {
     content: "";
     width: 73px;
     height: 1px;
     background-color: $white;
     position: absolute;
-    bottom: -5px;
-    left: 0;
+    bottom: 0;
+    left: 10px;
   }
 }
 
@@ -102,7 +134,7 @@
   margin-bottom: -10px;
 }
 
-.offers__container-feature {
+.offers__container > span {
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
@@ -112,7 +144,7 @@
   z-index: 2;
 }
 
-.offers__container-description {
+.offers__container > p {
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
@@ -126,7 +158,7 @@
 .offers__container-button {
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
-  color: $purple;
+  color: #1C3374;
   font-weight: 700;
   line-height: 14px;
   text-transform: uppercase;
@@ -140,14 +172,48 @@
   text-align: center;
   cursor: pointer;
   position: relative;
+  width: 93px;
+  min-height: 34px;
+
+  &:hover {
+    opacity: 0.8;
+
+    &::before {
+      opacity: 0.8;
+    }
+  }
+
+  &:focus {
+    outline: 1px solid #1C3374;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &:active {
+    color: #1C3374;
+
+    &::before {
+      background-color: #1C3374;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    &::before {
+      opacity: 0.5;
+    }
+  }
 
   &::before {
     content: "";
     width: 73px;
     height: 1px;
-    background-color: $purple;
+    background-color: #1C3374;
     position: absolute;
-    bottom: -5px;
-    left: 0;
+    bottom: 0;
+    left: 10px;
   }
 }

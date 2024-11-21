@@ -16,11 +16,28 @@
   text-align: center;
 }
 
-.swiper {
+.swiper--juri {
   width: 300px;
   width: 260px;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.swiper-slide {
+  position: relative;
+  min-height: 300px;
+}
+
+.swiper-slide__name {
+  position: absolute;
+  font-size: 22px;
+  color: $white;
+  font-weight: 400;
+  line-height: 22px;
+  bottom: 25px;
+  left: 0;
+  width: 260px;
+  text-align: center;
 }
 
 .swiper-button-prev {

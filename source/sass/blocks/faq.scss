@@ -39,10 +39,32 @@
   line-height: 16px;
   text-align: center;
   cursor: pointer;
+
+  &:hover {
+    border: 1px solid $purple;
+  }
+
+  &:focus {
+    border: 1px solid $purple;
+    outline: none;
+  }
+
+  &:active {
+    background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+    color: $white;
+    border: none;
+  }
+
+  &:disabled {
+    color: #C8C9CC;
+    background-color: $white;
+    border: 1px solid #C8C9CC;
+    pointer-events: none;
+  }
 }
 
 .faq__item-button--active {
-  background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
+  background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
   color: $white;
   border: none;
 }
@@ -70,14 +92,14 @@
   border-bottom: 1px solid #74819C;
 }
 
-.faq__roster-question {
+.faq__roster-item > span {
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
   margin: 20px 52px 20px 0;
 }
 
-.faq__roster-description {
+.faq__roster-item > p {
   font-size: 16px;
   font-weight: 300;
   line-height: 20px;
@@ -100,9 +122,28 @@
   padding: 0;
   cursor: pointer;
   display: flex;
+  background-size: 30px 30px;
 }
 
-.faq__roster-button-icon {
-  width: 30px;
-  height: 30px;
+.faq__roster-button[data-state="plus"] {
+  background-image: url("../../img/sprite/plus.svg");
+}
+
+.faq__roster-button[data-state="plus"]:hover {
+  background-image: url("../../img/sprite/plus-hover.svg");
+}
+
+.faq__roster-button[data-state="plus"]:focus {
+  background-image: url("../../img/sprite/plus-focus.svg");
+  outline: none;
+}
+
+.faq__roster-button[data-state="plus"]:disabled {
+  background-image: url("../../img/sprite/plus-disabled.svg");
+  pointer-events: none;
+}
+
+
+.faq__roster-button[data-state="minus"] {
+  background-image: url("../../img/sprite/minus.svg");
 }
