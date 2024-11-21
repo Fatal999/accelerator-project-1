@@ -73,11 +73,7 @@
               srcset="./img/video@2x.jpg 2x" width="320" height="170" alt="Превью видео.">
           </picture>
           <iframe class="about__youtube" width="320" height="170" data-src="https://www.youtube.com/embed/9TZXsZItgdw?si=zfiVjNhOeecJPPwA" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen hidden></iframe>
-          <button class="about__video-play" type="button">
-            <svg class="about__video-play-icon">
-              <use href="/__spritemap#sprite-play-icon"></use>
-            </svg>
-          </button>
+          <button class="about__video-play" type="button"></button>
         </div>
       </section>
     </div>
@@ -94,30 +90,36 @@
             <h2 class="price__item-title">С тренером</h2>
             <h3 class="price__item-option">12 занятий</h3>
             <p class="price__item-background price__item-background--trainer" aria-hidden="true">5000</p>
-            <span class="price__item-price price__item-price--trainer">5000</span>
-            <svg class="price__item-rub">
-              <use href="/__spritemap#sprite-rub"></use>
-            </svg>
+            <span class="price__item-wrapper">
+              <span class="price__item-wrapper-price price__item-wrapper--trainer">5000</span>
+              <svg class="price__item-wrapper-rub">
+                <use href="/__spritemap#sprite-rub"></use>
+              </svg>
+            </span>
             <button class="price__item-button" type="button">Купить абонемент</button>
           </li>
           <li class="price__item">
             <h2 class="price__item-title">Дневной</h2>
             <h3 class="price__item-option">с 8:00 до 17:00</h3>
             <p class="price__item-background price__item-background--day" aria-hidden="true">1700</p>
-            <span class="price__item-price price__item-price--day">1700</span>
-            <svg class="price__item-rub">
-              <use href="/__spritemap#sprite-rub"></use>
-            </svg>
+            <span class="price__item-wrapper">
+              <span class="price__item-wrapper-price price__item-wrapper--day">1700</span>
+              <svg class="price__item-wrapper-rub">
+                <use href="/__spritemap#sprite-rub"></use>
+              </svg>
+            </span>
             <button class="price__item-button" type="button">Купить абонемент</button>
           </li>
           <li class="price__item">
             <h2 class="price__item-title">Полный день</h2>
             <h3 class="price__item-option">с 8:00 до 22:00</h3>
             <p class="price__item-background price__item-background--full-day" aria-hidden="true">2700</p>
-            <span class="price__item-price price__item-price--full-day">2700</span>
-            <svg class="price__item-rub">
-              <use href="/__spritemap#sprite-rub"></use>
-            </svg>
+            <span class="price__item-wrapper">
+              <span class="price__item-wrapper-price price__item-wrapper--full-day">2700</span>
+              <svg class="price__item-wrapper-rub">
+                <use href="/__spritemap#sprite-rub"></use>
+              </svg>
+            </span>
             <button class="price__item-button" type="button">Купить абонемент</button>
           </li>
         </ul>

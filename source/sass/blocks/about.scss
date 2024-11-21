@@ -69,9 +69,34 @@
   padding: 0;
   margin: 0;
   border: none;
+  z-index: 1;
+  background-image: url("../../img/sprite/play-icon.svg");
+
+  &:hover {
+    background-image: url("../../img/sprite/play-icon-hover.svg");
+    background-size: 72px 72px;
+  }
+
+  &:focus {
+    background-image: url("../../img/sprite/play-icon-focus.svg");
+    background-size: 72px 72px;
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    background-image: url("../../img/sprite/play-icon-active.svg");
+    background-size: 72px 72px;
+  }
+
+  &:disabled {
+    background-image: url("../../img/sprite/play-icon-disabled.svg");
+    background-size: 72px 72px;
+  }
 }
 
 .about__video-play-icon {
   width: 72px;
   height: 72px;
+  z-index: 2;
 }
