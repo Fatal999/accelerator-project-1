@@ -23,35 +23,88 @@
 
 .form__fields-name {
   width: 290px;
+  min-height: 36px;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #74819C;
   cursor: pointer;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.4);
-  font-weight: 300;
+  color: $white;
+  font-weight: 400;
   line-height: 22px;
   margin-left: 15px;
   margin-bottom: 36px;
   padding: 0;
+  padding-left: 5px;
+  box-sizing: border-box;
+
+  &:hover {
+    border-bottom: 1px solid $white;
+  }
+
+  &:focus {
+    border: 1px solid $white;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.4px;
+    pointer-events: none;
+  }
+}
+
+.form__fields-name::placeholder {
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-left: 15px;
 }
 
 .form__fields-tel {
   width: 290px;
+  min-height: 36px;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #74819C;
   cursor: pointer;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.4);
-  font-weight: 300;
+  color: $white;
+  font-weight: 400;
   line-height: 22px;
   margin-left: 15px;
   margin-bottom: 36px;
   padding: 0;
+  padding-left: 5px;
+  box-sizing: border-box;
+
+  &:hover {
+    border-bottom: 1px solid $white;
+  }
+
+  &:focus {
+    border: 1px solid $white;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.4px;
+    pointer-events: none;
+  }
 }
+
+.form__fields-tel::placeholder {
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-left: 15px;
+}
+
 
 .form__fields-submit {
   font-family: "Roboto Condensed" "Arial", "Helvetica", sans-serif;
@@ -67,6 +120,29 @@
   padding: 0;
   margin: 0 auto 70px auto;
   background-color: transparent;
+
+  &:hover {
+    background-color: $white;
+    color: #103AAE;
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.80);
+    border: 2px solid $black;
+    color: #103AAE;
+  }
+
+  &:active {
+    background-color: $white;
+    color: $purple;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border: 2px solid $white;
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
 
 .form__contacts {

@@ -33,11 +33,32 @@
   color: $white;
   font-weight: 400;
   line-height: 20px;
+  min-height: 32px;
   background-color: transparent;
+  padding: 5px 10px 5px 10px;
   border: none;
   margin: 0;
-  padding: 0;
   cursor: pointer;
+  position: relative;
+  border: 1px solid $black;
+
+  &:hover {
+    border-bottom: 1px solid $white;
+  }
+
+  &:focus {
+    border: 1px solid $white;
+    outline: none;
+  }
+
+  &:active {
+    color: $white;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
 }
 
 .footer__links {
@@ -51,16 +72,88 @@
 
 .footer__link {
   margin-right: 20px;
+  width: 25px;
+  height: 25px;
+  display: flex;
 }
 
-.footer__target {
+.footer__target--vk {
   width: 25px;
   height: 25px;
   cursor: pointer;
+  background-image: url("../../img/sprite/vk.svg");
+  background-size: 25px 25px;
 }
 
-.footer__target-icon {
+.footer__target--vk:hover {
+  background-image: url("../../img/sprite/vk-hover.svg");
+}
+
+.footer__target--vk:focus {
+  background-image: url("../../img/sprite/vk-focus.svg");
+  outline: none;
+  border: none;
+}
+
+.footer__target--vk:active {
+  background-image: url("../../img/sprite/vk-active.svg");
+}
+
+.footer__target--vk[aria-disabled="true"] {
+  background-image: url("../../img/sprite/vk-disabled.svg");
+  pointer-events: none;
+}
+
+.footer__target--ok {
   width: 25px;
   height: 25px;
+  cursor: pointer;
+  background-image: url("../../img/sprite/ok.svg");
+  background-size: 25px 25px;
 }
 
+.footer__target--ok:hover {
+  background-image: url("../../img/sprite/ok-hover.svg");
+}
+
+.footer__target--ok:focus {
+  background-image: url("../../img/sprite/ok-focus.svg");
+  outline: none;
+  border: none;
+}
+
+.footer__target--ok:active {
+  background-image: url("../../img/sprite/ok-active.svg");
+}
+
+.footer__target--ok[aria-disabled="true"] {
+  background-image: url("../../img/sprite/ok-disabled.svg");
+  pointer-events: none;
+}
+
+.footer__target--reddit {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-image: url("../../img/sprite/reddit.svg");
+  background-size: 25px 25px;
+}
+
+.footer__target--reddit:hover {
+  background-image: url("../../img/sprite/reddit-hover.svg");
+}
+
+.footer__target--reddit:focus {
+  background-image: url("../../img/sprite/reddit-focus.svg");
+  outline: none;
+  border: none;
+}
+
+.footer__target--reddit:active {
+  background-image: url("../../img/sprite/reddit-active.svg");
+}
+
+.footer__target--reddit[aria-disabled="true"] {
+  background-image: url("../../img/sprite/reddit-disabled.svg");
+  pointer-events: none;
+}
