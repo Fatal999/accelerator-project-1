@@ -10,3 +10,4 @@ import './blocks/price';
 import './blocks/video';
 import './blocks/juri';
 import './blocks/faq';
+import './blocks/form';

@@ -9,6 +9,7 @@
   background-color: $purple;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .form__fields-title{
@@ -25,7 +26,7 @@
   width: 290px;
   min-height: 36px;
   background-color: transparent;
-  border: none;
+  border: 1px solid $purple;
   border-bottom: 1px solid #74819C;
   cursor: pointer;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
@@ -63,11 +64,23 @@
   margin-left: 15px;
 }
 
+.form__fields-name-error {
+  font-size: 14px;
+  color: #FF121F;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+  position: absolute;
+  top: 155px;
+  left: 20px;
+  display: none;
+}
+
 .form__fields-tel {
   width: 290px;
   min-height: 36px;
   background-color: transparent;
-  border: none;
+  border: 1px solid $purple;
   border-bottom: 1px solid #74819C;
   cursor: pointer;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
@@ -103,6 +116,18 @@
   font-weight: 300;
   line-height: 22px;
   margin-left: 15px;
+}
+
+.form__fields-tel-error {
+  display: none;
+  font-size: 14px;
+  color: #FF121F;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+  position: absolute;
+  top: 225px;
+  left: 20px;
 }
 
 

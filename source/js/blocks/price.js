@@ -1,10 +1,10 @@
 const priceButtons = document.querySelectorAll('.price__wrapper-button');
 const backgroundPriceTrainer = document.querySelector('.price__item-background--trainer');
-const priceTrainer = document.querySelector('.price__item-wrapper--trainer');
+const priceTrainer = document.querySelector('.price__item-wrapper-price--trainer');
 const backgroundPriceDay = document.querySelector('.price__item-background--day');
-const priceDay = document.querySelector('.price__item-wrapper--day');
+const priceDay = document.querySelector('.price__item-wrapper-price--day');
 const backgroundPriceFullDay = document.querySelector('.price__item-background--full-day');
-const priceFullDay = document.querySelector('.price__item-wrapper--full-day');
+const priceFullDay = document.querySelector('.price__item-wrapper-price--full-day');
 
 priceButtons.forEach((priceButton) => {
   priceButton.addEventListener('click', () => {

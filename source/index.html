@@ -91,7 +91,7 @@
             <h3 class="price__item-option">12 занятий</h3>
             <p class="price__item-background price__item-background--trainer" aria-hidden="true">5000</p>
             <span class="price__item-wrapper">
-              <span class="price__item-wrapper-price price__item-wrapper--trainer">5000</span>
+              <span class="price__item-wrapper-price price__item-wrapper-price--trainer">5000</span>
               <svg class="price__item-wrapper-rub">
                 <use href="/__spritemap#sprite-rub"></use>
               </svg>
@@ -103,7 +103,7 @@
             <h3 class="price__item-option">с 8:00 до 17:00</h3>
             <p class="price__item-background price__item-background--day" aria-hidden="true">1700</p>
             <span class="price__item-wrapper">
-              <span class="price__item-wrapper-price price__item-wrapper--day">1700</span>
+              <span class="price__item-wrapper-price price__item-wrapper-price--day">1700</span>
               <svg class="price__item-wrapper-rub">
                 <use href="/__spritemap#sprite-rub"></use>
               </svg>
@@ -115,7 +115,7 @@
             <h3 class="price__item-option">с 8:00 до 22:00</h3>
             <p class="price__item-background price__item-background--full-day" aria-hidden="true">2700</p>
             <span class="price__item-wrapper">
-              <span class="price__item-wrapper-price price__item-wrapper--full-day">2700</span>
+              <span class="price__item-wrapper-price price__item-wrapper-price--full-day">2700</span>
               <svg class="price__item-wrapper-rub">
                 <use href="/__spritemap#sprite-rub"></use>
               </svg>
@@ -413,7 +413,7 @@
             <h2>Год</h2>
             <span>4999</span>
             <p>Безлимитный абонемент в тренажёрный зал</p>
-            <button class="offers__wrapper-price-button" type="button">Подробнее</button>
+            <a class="offers__wrapper-price-link" href="#" tabindex="0">Подробнее</a>
             <picture class="offers__wrapper-price-image">
               <source type="image/webp" media="(min-width: 1366px )"
                 srcset="./img/offers-desktop.webp, ./img/offers-desktop@2x.webp 2x">
@@ -432,12 +432,12 @@
           <div class="offers__container offers__container--add">
             <span>Месяц бесплатно</span>
             <p>Приведи друга, получи абонемент в подарок</p>
-            <button class="offers__container-button" type="button">Подробнее</button>
+            <a class="offers__container-link" href="#" tabindex="0">Подробнее</a>
           </div>
           <div class="offers__container">
             <span>Скидка 20%</span>
             <p>Корпоративный фитнес с командой</p>
-            <button class="offers__container-button" type="button">Подробнее</button>
+            <a class="offers__container-link" href="#" tabindex="0">Подробнее</a>
           </div>
         </div>
       </section>
@@ -591,11 +591,13 @@
     </div>
     <div data-test="form">
       <section class="form">
-        <form method="post" action="https://echo.htmlacademy.ru/"></form>
+        <form method="post" action="https://echo.htmlacademy.ru/">
           <div class="form__fields">
             <h1 class="form__fields-title">Бесплатное занятие</h1>
-            <input class="form__fields-name" type="text" placeholder="Имя" required>
-            <input class="form__fields-tel" type="tel" placeholder="Телефон" required>
+            <input class="form__fields-name" type="text" placeholder="Имя" name="name" required>
+            <span class="form__fields-name-error">Допускается ввод только букв и пробелов.</span>
+            <input class="form__fields-tel" type="tel" placeholder="Телефон" name="tel" required>
+            <span class="form__fields-tel-error">Допускается ввод только цифр.</span>
             <button class="form__fields-submit" type="submit">Отправить</button>
           </div>
         </form>
@@ -627,19 +629,19 @@
         </svg>
         <ul class="footer__list">
           <li class="footer__item">
-            <button class="footer__item-button" type="button">Услуги</button>
+            <a class="footer__item-link" href="#">Услуги</a>
           </li>
           <li class="footer__item">
-            <button class="footer__item-button" type="button">Абонементы</button>
+            <a class="footer__item-link" href="#">Абонементы</a>
           </li>
           <li class="footer__item">
-            <button class="footer__item-button" type="button">Акции</button>
+            <a class="footer__item-link" href="#">Акции</a>
           </li>
           <li class="footer__item">
-            <button class="footer__item-button" type="button">Тренеры</button>
+            <a class="footer__item-link" href="#">Тренеры</a>
           </li>
           <li class="footer__item">
-            <button class="footer__item-button" type="button">Расписание</button>
+            <a class="footer__item-link" href="#">Расписание</a>
           </li>
         </ul>
         <ul class="footer__links">

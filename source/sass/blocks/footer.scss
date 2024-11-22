@@ -23,24 +23,23 @@
 }
 
 .footer__item {
-  margin-right: 35px;
+  margin-right: 25px;
   margin-bottom: 20px;
 }
 
-.footer__item-button {
-  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+.footer__item-link {
   font-size: 14px;
   color: $white;
   font-weight: 400;
   line-height: 20px;
   min-height: 32px;
   background-color: transparent;
-  padding: 5px 10px 5px 10px;
-  border: none;
   margin: 0;
+  padding: 5px;
   cursor: pointer;
   position: relative;
   border: 1px solid $black;
+  text-decoration: none;
 
   &:hover {
     border-bottom: 1px solid $white;
@@ -99,7 +98,7 @@
   background-image: url("../../img/sprite/vk-active.svg");
 }
 
-.footer__target--vk[aria-disabled="true"] {
+.footer__target--vk--disabled {
   background-image: url("../../img/sprite/vk-disabled.svg");
   pointer-events: none;
 }
@@ -126,7 +125,7 @@
   background-image: url("../../img/sprite/ok-active.svg");
 }
 
-.footer__target--ok[aria-disabled="true"] {
+.footer__target--ok--disabled {
   background-image: url("../../img/sprite/ok-disabled.svg");
   pointer-events: none;
 }
@@ -153,7 +152,7 @@
   background-image: url("../../img/sprite/reddit-active.svg");
 }
 
-.footer__target--reddit[aria-disabled="true"] {
+.footer__target--reddit--disabled {
   background-image: url("../../img/sprite/reddit-disabled.svg");
   pointer-events: none;
 }
