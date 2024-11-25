@@ -77,8 +77,8 @@
         </div>
       </section>
     </div>
-    <div data-test="price">
-      <section class="price" id="price">
+    <div class="price" data-test="price">
+      <section class="price__container" id="price">
         <h1 class="price__title">Абонементы</h1>
         <div class="price__wrapper">
           <button class="price__wrapper-button price__wrapper-button--month price__wrapper-button--active" type="button">1 месяц</button>
@@ -369,8 +369,8 @@
         </div>
       </section>
     </div>
-    <div data-test="features">
-      <section class="features">
+    <div class="features" data-test="features">
+      <section class="features__container">
         <h1 class="features__title">Наши преимущества</h1>
         <ul class="features__list">
           <li>
@@ -413,7 +413,9 @@
             <h2>Год</h2>
             <span>4999</span>
             <p>Безлимитный абонемент в тренажёрный зал</p>
-            <a class="offers__wrapper-price-link" href="#" tabindex="0">Подробнее</a>
+            <a class="offers__wrapper-price-link" href="#" tabindex="0">
+              <span>Подробнее</span>
+            </a>
             <picture class="offers__wrapper-price-image">
               <source type="image/webp" media="(min-width: 1366px )"
                 srcset="./img/offers-desktop.webp, ./img/offers-desktop@2x.webp 2x">
@@ -432,18 +434,22 @@
           <div class="offers__container offers__container--add">
             <span>Месяц бесплатно</span>
             <p>Приведи друга, получи абонемент в подарок</p>
-            <a class="offers__container-link" href="#" tabindex="0">Подробнее</a>
+            <a class="offers__container-link" href="#" tabindex="0">
+              <span>Подробнее</span>
+            </a>
           </div>
           <div class="offers__container">
             <span>Скидка 20%</span>
             <p>Корпоративный фитнес с командой</p>
-            <a class="offers__container-link" href="#" tabindex="0">Подробнее</a>
+            <a class="offers__container-link" href="#" tabindex="0">
+              <span>Подробнее</span>
+            </a>
           </div>
         </div>
       </section>
     </div>
-    <div data-test="faq">
-      <section class="faq">
+    <div class="faq" data-test="faq">
+      <section class="faq__container">
         <h1 class="faq__title">Вопросы и ответы</h1>
         <ul class="faq__list">
           <li class="faq__item">
@@ -589,8 +595,8 @@
           <div class="swiper-button-next"></div>
       </section>
     </div>
-    <div data-test="form">
-      <section class="form">
+    <div class="form" data-test="form">
+      <section class="form__container">
         <form method="post" action="https://echo.htmlacademy.ru/">
           <div class="form__fields">
             <h1 class="form__fields-title">Бесплатное занятие</h1>
@@ -622,26 +628,36 @@
         </div>
       </section>
     </div>
-    <div data-test="footer">
-      <footer class="footer">
+    <div class="footer" data-test="footer">
+      <footer class="footer__container">
         <svg class="footer__logo">
           <use href="/__spritemap#sprite-logo"></use>
         </svg>
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__item-link" href="#">Услуги</a>
+            <a class="footer__item-link" href="#">
+              <span>Услуги</span>
+            </a>
           </li>
           <li class="footer__item">
-            <a class="footer__item-link" href="#">Абонементы</a>
+            <a class="footer__item-link" href="#">
+              <span>Абонементы</span>
+            </a>
           </li>
           <li class="footer__item">
-            <a class="footer__item-link" href="#">Акции</a>
+            <a class="footer__item-link" href="#">
+              <span>Акции</span>
+            </a>
           </li>
           <li class="footer__item">
-            <a class="footer__item-link" href="#">Тренеры</a>
+            <a class="footer__item-link" href="#">
+              <span>Тренеры</span>
+            </a>
           </li>
           <li class="footer__item">
-            <a class="footer__item-link" href="#">Расписание</a>
+            <a class="footer__item-link" href="#">
+              <span>Расписание</span>
+            </a>
           </li>
         </ul>
         <ul class="footer__links">

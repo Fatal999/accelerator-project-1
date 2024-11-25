@@ -1,4 +1,8 @@
 .form {
+  background: linear-gradient(to bottom, $purple 0px, $purple 394px, transparent 394px, transparent 100%);
+}
+
+.form__container {
   width: 320px;
   display: flex;
   flex-direction: column;
@@ -6,7 +10,6 @@
 }
 
 .form__fields {
-  background-color: $purple;
   display: flex;
   flex-direction: column;
   position: relative;

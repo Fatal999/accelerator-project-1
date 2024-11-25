@@ -1,10 +1,13 @@
 .features {
+  background-color: #F8F9FC;
+}
+
+.features__container {
   width: 320px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   position: relative;
-  background-color: #F8F9FC;
 }
 
 .features__title {
