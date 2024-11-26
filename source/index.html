@@ -150,7 +150,7 @@
         </div>
         <h2 class="games__description">Ежегодные соревнования по CrossFit</h2>
         <button class="games__button" type="button">Заполнить заявку</button>
-        <picture class="games__image">
+        <picture>
           <source type="image/webp" media="(min-width: 1366px )"
             srcset="./img/games-desktop.webp, ./img/games-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px )"
@@ -161,7 +161,7 @@
             srcset="./img/games-desktop.jpg, ./img/games-desktop@2x.jpg 2x">
           <source media="(min-width: 768px )"
             srcset="./img/games-tablet.jpg, ./img/games-tablet@2x.jpg 2x">
-          <img src="./img/games-mobile.jpg"
+          <img class="games__image" src="./img/games-mobile.jpg"
             srcset="./img/games-mobile@2x.jpg 2x" width="290" height="290" alt="Соревнования по CrossFit.">
         </picture>
       </section>
@@ -431,19 +431,21 @@
                 srcset="./img/offers-mobile@2x.jpg 2x" width="320" height="360" alt="Акция.">
             </picture>
           </div>
-          <div class="offers__container offers__container--add">
-            <span>Месяц бесплатно</span>
-            <p>Приведи друга, получи абонемент в подарок</p>
-            <a class="offers__container-link" href="#" tabindex="0">
-              <span>Подробнее</span>
-            </a>
-          </div>
-          <div class="offers__container">
-            <span>Скидка 20%</span>
-            <p>Корпоративный фитнес с командой</p>
-            <a class="offers__container-link" href="#" tabindex="0">
-              <span>Подробнее</span>
-            </a>
+          <div class="offers__space">
+            <div class="offers__container offers__container--add">
+              <span>Месяц бесплатно</span>
+              <p>Приведи друга, получи абонемент в подарок</p>
+              <a class="offers__container-link" href="#" tabindex="0">
+                <span>Подробнее</span>
+              </a>
+            </div>
+            <div class="offers__container">
+              <span>Скидка 20%</span>
+              <p>Корпоративный фитнес с командой</p>
+              <a class="offers__container-link" href="#" tabindex="0">
+                <span>Подробнее</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -600,10 +602,12 @@
         <form method="post" action="https://echo.htmlacademy.ru/">
           <div class="form__fields">
             <h1 class="form__fields-title">Бесплатное занятие</h1>
-            <input class="form__fields-name" type="text" placeholder="Имя" name="name" required>
-            <span class="form__fields-name-error">Допускается ввод только букв и пробелов.</span>
-            <input class="form__fields-tel" type="tel" placeholder="Телефон" name="tel" required>
-            <span class="form__fields-tel-error">Допускается ввод только цифр.</span>
+            <div class="form__wrapper">
+              <input class="form__fields-name" type="text" placeholder="Имя" name="name" required>
+              <span class="form__fields-name-error">Допускается ввод только букв и пробелов.</span>
+              <input class="form__fields-tel" type="tel" placeholder="Телефон" name="tel" required>
+              <span class="form__fields-tel-error">Допускается ввод только цифр.</span>
+            </div>
             <button class="form__fields-submit" type="submit">Отправить</button>
           </div>
         </form>

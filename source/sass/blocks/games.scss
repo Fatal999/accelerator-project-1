@@ -4,6 +4,11 @@
   display: flex;
   flex-direction: column;
   margin: 25px auto 25px auto;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 }
 
 .games__wrapper {
@@ -19,6 +24,10 @@
   text-transform: uppercase;
   width: 117px;
   margin: 40px 37px 16px 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 108px;
+  }
 }
 
 .games__add {
@@ -41,6 +50,13 @@
   margin-top: 40px;
   margin-bottom: 5px;
 
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   &::before {
     content: "";
     width: 56px;
@@ -49,6 +65,10 @@
     position: absolute;
     bottom: -2px;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 100px;
+    }
   }
 }
 
@@ -57,6 +77,11 @@
   grid-template-columns: 13px 32px;
   column-gap: 3px;
   row-gap: 0px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 5px;
+    align-items: center;
+  }
 }
 
 .games__wrapp-number {
@@ -68,6 +93,11 @@
   line-height: 24px;
   margin: 0;
   height: 24px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 5px;
+    align-items: center;
+  }
 }
 
 .games__wrapp-month {
@@ -78,6 +108,11 @@
   font-weight: 400;
   line-height: 100%;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .games__wrapp-year {
@@ -88,6 +123,11 @@
   font-weight: 400;
   line-height: 100%;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .games__time {
@@ -105,6 +145,12 @@
   text-align: left;
   margin: 5px 54px 5px 0;
 
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   &::before {
     content: "";
     width: 56px;
@@ -113,6 +159,10 @@
     position: absolute;
     bottom: -2px;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 100px;
+    }
   }
 }
 
@@ -131,6 +181,13 @@
   line-height: 20px;
   width: 171px;
   margin: 16px 79px 6px 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 10px 418px 0 40px;
+  }
 }
 
 .games__button {
@@ -147,6 +204,12 @@
   line-height: 12px;
   text-transform: uppercase;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+    min-height: 66px;
+    margin-bottom: 32px;
+  }
 
   &:hover {
     background-color: $white;
@@ -176,4 +239,13 @@
   margin: 0;
   width: 290px;
   height: 290px;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 378px;
+    height: 348px;
+  }
 }
