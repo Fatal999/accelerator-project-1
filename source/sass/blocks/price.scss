@@ -13,6 +13,10 @@
   @media (min-width: $tablet-width) {
     width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1366px;
+  }
 }
 
 .price__title {
@@ -29,6 +33,12 @@
     line-height: 42px;
     margin: 60px auto 35px auto;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 54px;
+    margin: 100px auto 20px auto;
+  }
 }
 
 .price__wrapper {
@@ -44,6 +54,12 @@
     width: 310px;
     min-height: 28px;
     margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    min-height: 30px;
+    margin-bottom: 40px;
   }
 }
 
@@ -63,6 +79,11 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   &:hover {
@@ -140,6 +161,12 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin-bottom: 100px;
+    margin-left: 103px;
+  }
 }
 
 .price__item {
@@ -156,6 +183,13 @@
     min-height: 446px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 346px;
+    min-height: 433px;
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+
   &:hover {
     border-image: linear-gradient(128deg, #D10A42 0%, #0041CA 100%) 1;
   }
@@ -169,6 +203,10 @@
 
 .price__item:last-child {
   margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .price__item-title {
@@ -184,6 +222,12 @@
     width: 250px;
     line-height: 24px;
     margin: 65px auto 22px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+    margin: 65px auto 17px auto;
   }
 }
 
@@ -225,6 +269,14 @@
     font-weight: 700;
     line-height: 150%;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 100px;
+    line-height: 150%;
+    width: 230px;
+    min-height: 15px;
+    top: 149px;
+  }
 }
 
 .price__item-wrapper {
@@ -242,6 +294,12 @@
     width: 250px;
     margin-top: 82px;
     margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    margin-top: 77px;
+    margin-bottom: 17px;
   }
 }
 
@@ -282,13 +340,17 @@
   border: none;
   background-color: $white;
   outline: 2px solid $purple;
-  margin: 18px 42px 50px 42px;
+  margin: 0 42px 50px 42px;
   padding: 0;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 250px;
-    margin: 22px 65px 65px 65px;
+    margin: 0 65px 65px 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
   }
 
   &:hover {
@@ -326,5 +388,12 @@
     width: 275px;
     height: 328px;
     transform: rotate(150deg);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 320px;
+    height: 384px;
+    right: -100px;
+    bottom: 0;
   }
 }
