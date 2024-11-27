@@ -234,12 +234,36 @@
   line-height: 32px;
   width: 290px;
   margin: 40px auto 15px auto;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+    width: 440px;
+    margin: 60px auto 36px auto;
+    text-align: center;
+  }
+}
+
+.form__space {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 220px 220px;
+    margin-left: 164px;
+    row-gap: 15px;
+    column-gap: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .form__adress {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .form__adress-title {
@@ -247,6 +271,12 @@
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    margin-bottom: 0;
+    line-height: 24px;
+  }
 }
 
 .form__adress-adress {
@@ -254,12 +284,23 @@
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 22px;
+    margin-top: 5px;
+  }
 }
 
 .form__schedule {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .form__schedule-title {
@@ -267,6 +308,12 @@
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    margin-bottom: 0;
+    line-height: 24px;
+  }
 }
 
 .form__schedule-time {
@@ -274,12 +321,23 @@
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 22px;
+    margin-top: 5px;
+  }
 }
 
 .form__tel {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .form__tel-title {
@@ -287,6 +345,12 @@
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    margin-bottom: 0;
+    line-height: 24px;
+  }
 }
 
 .form__tel-tel {
@@ -301,12 +365,22 @@
   line-height: 20px;
   text-decoration: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 22px;
+  }
 }
 
 .form__email {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .form__email-title {
@@ -314,6 +388,12 @@
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    margin-bottom: 0;
+    line-height: 24px;
+  }
 }
 
 .form__email-email {
@@ -328,4 +408,10 @@
   line-height: 20px;
   text-decoration: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 22px;
+  }
 }
