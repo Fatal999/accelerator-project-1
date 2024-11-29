@@ -3,6 +3,14 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1366px;
+  }
 }
 
 .reviews-title {
@@ -20,6 +28,11 @@
     width: 678px;
     margin: 60px auto 35px auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+    margin: 100px auto 75px auto;
+  }
 }
 
 .swiper--reviews {
@@ -31,6 +44,12 @@
     margin-bottom: 60px;
     width: 550px;
     height: 242px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 100px;
+    width: 560px;
+    height: 278px;
   }
 }
 
